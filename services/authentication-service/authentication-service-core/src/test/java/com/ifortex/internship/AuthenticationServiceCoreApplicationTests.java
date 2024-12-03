@@ -1,4 +1,4 @@
-package com.ifortex.internship.authenticationservicecore;
+package com.ifortex.internship;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: authentication-service-core
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+#    hikari:
+    username: ifortex
+    password: ifortex
+    url: jdbc:postgresql://localhost:5432/med_auth_db
+  flyway:
+#    url: jdbc:postgresql://localhost:5432/med_auth_db
+#    enabled: true
+    baseline-on-migrate: true
+    validate-on-migrate: true
+
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: ${keycloak.uri}/realms/auth-realm
+#      client:
+#        registration:
+#          keycloak:
+#            authorization-grant-type: client_credentials
+#            client-id: auth-service-client
+#            client-secret: someSecret
+#        provider:
+#          keycloak:
+#            token-uri: ${keycloak.uri}/realms/auth-realm/protocol/openid-connect/token
+
+#keycloak:
+#  uri: http://localhost:8080/realms/auth-realm
